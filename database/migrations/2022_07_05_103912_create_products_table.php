@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('product_EAN')->nullable();
             $table->text('product_description')->nullable();
             $table->json('images')->nullable();
-
+            $table->integer('stock')->default(0);
             $table->timestamps();
         });
     }
